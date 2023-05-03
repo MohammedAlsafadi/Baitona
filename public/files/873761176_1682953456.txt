@@ -1,0 +1,52 @@
+
+srcoll   عند عمل سكرول
+        * scrollY 
+            pageYOffset // مكان سكرول على محور العامودي
+        * scrollX 
+            pageXOffset // مكان سكرول على محور الافقي
+        
+        * scrollTo(x , y)
+            scrollTo({top:0 , left:0 , behavior:"smooth"})
+        * scrollBy (x , y)
+
+
+       
+        تحديد خصائص عنصر معين
+        console.log(down.getBoundingClientRect());
+        console.log(down.getBoundingClientRect().width);
+        console.log(down.getBoundingClientRect().height);
+                    console.log(down.scrollHeight, down.offsetHeight); \\ old
+        console.log(down.getBoundingClientRect().bottom);
+        console.log(down.getBoundingClientRect().top);
+        console.log(down.getBoundingClientRect().y);
+        console.log(down.getBoundingClientRect().left);
+        console.log(down.getBoundingClientRect().x);
+        console.log(down.getBoundingClientRect().right);
+
+        جلب ارتفاع الموقع حسب الجهاز 
+        let bodyHeight = document.body.getBoundingClientRect().height;
+
+/////////////////////////////////////
+Window timers : 2 methods fo window object
+    * Waiting for Intervals:   تنفيذ دالة معبن على عدة مراحل
+        setInterval(callbackFunction , duration-0ms) //do by duration - infinte
+    
+    * Waiting for a Timeout   انتظار مهمة معينة ثم تنفيذ دالة معين 
+        setTimeout(callbackFunction , duration-0ms) // do one once
+
+    setTimeout()  /  clearTimeout()
+    setInterval() / clearInterval()
+
+/////////////////////////////////////
+Web Storage API (local Storage - session  Storage)
+    localStorage.length
+    localStorage.key()
+    
+    localStorage.setItem("key" , "value")
+    localStorage.getItem("key")
+    localStorage.removeItem("key");
+    localStorage.clear();
+
+    for (i = 0; i < localStorage.length; i++) {
+        consle.log(localStorage.key(i))
+    }
